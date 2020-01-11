@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Tong_Duong_Cheo(a) {
+        let sum = 0;
+        for(i = 0; i < a.length; i++){
+            sum += a[i][i];
+        }
+        return sum;
+    }
+    let maTran = [
+        [1,4,7,],
+        [3,-4,6,],
+        [4,5,6]
+    ];
+    alert("Tổng các đường chéo chính của ma trận vuông là: " +Tong_Duong_Cheo(maTran));
+
+
+
+
+</script>
+
+</body>
+</html>

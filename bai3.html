@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let d = new Date();
+    let YearOne = d.getFullYear();
+
+    do {
+        let year = prompt("Nhập năm sinh của bạn");
+        year = parseFloat(year);
+        if (isNaN(year) == true) {
+            alert("wrong")
+        }else if (Number.isInteger(year) == false) {
+            alert("wrong");
+        } else {
+            old(year);
+            break;
+        }
+    }
+    while (prompt("Would you like to continue?(yes/no)")=='yes');
+    function old(value) {
+        if (value > YearOne) {
+            alert("Không hợp lệ");
+        } else if ( value == YearOne ) {
+            alert("nhầm à ")
+        } else {
+            alert("this is old " +(YearOne - value))
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
